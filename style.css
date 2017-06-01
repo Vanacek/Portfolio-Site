@@ -15,7 +15,7 @@ body{
 	background-size: cover;
 }
 
-.container{ 
+.container{
 	background-color:rgba(0,0,0,0.5);
 	justify-content: space-between;
 	text-align: center;
@@ -40,6 +40,7 @@ img{
 	height:175px;
 	width: 175px;
 }
+
 
 #location{
 	font-size: 25px;
@@ -86,6 +87,8 @@ ul{
 	margin-top:10px !important;
 	margin-bottom:10px !important;
 	color:white;
+	transition: all 200ms cubic-bezier(0.13, 0.43, 0.54, 1.82);
+  transition: all 350ms cubic-bezier(0.13, 0.43, 0.54, 1.82);
 }
 
 a{
@@ -94,8 +97,12 @@ a{
 	font-size: 16px;
 	color:white !important;
 }
-a:hover{
-	color:#cc5500 !important;
+a #social:hover{
+	transform: scale(1.2);
+}
+
+.email:hover{
+	text-decoration: underline;
 }
 
 p{
@@ -117,9 +124,6 @@ p{
 	color:white;
 }
 
-.fa:hover{
-	color:#cc5500 !important;
-}
 
 .links{
 	width:auto;
@@ -147,7 +151,7 @@ p{
 		min-height:175vh;
 		min-width: 375px;
 	}
-	
+
 	.container{
 		margin-top: 10px;
 		background-color:rgba(0,0,0,0);
@@ -192,5 +196,3 @@ p{
 		width: 210px;
 	}
 }
-
-

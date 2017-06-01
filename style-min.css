@@ -90,7 +90,11 @@ ul {
   margin-right: 50px !important;
   margin-top: 10px !important;
   margin-bottom: 10px !important;
-  color: white; }
+  color: white;
+  -webkit-transition: all 200ms cubic-bezier(0.13, 0.43, 0.54, 1.82);
+  transition: all 200ms cubic-bezier(0.13, 0.43, 0.54, 1.82);
+  -webkit-transition: all 350ms cubic-bezier(0.13, 0.43, 0.54, 1.82);
+  transition: all 350ms cubic-bezier(0.13, 0.43, 0.54, 1.82); }
 
 a {
   text-decoration: none;
@@ -98,8 +102,12 @@ a {
   font-size: 16px;
   color: white !important; }
 
-a:hover {
-  color: #cc5500 !important; }
+a #social:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2); }
+
+.email:hover {
+  text-decoration: underline; }
 
 p {
   text-decoration: underline;
@@ -115,9 +123,6 @@ p {
 .fa {
   font-size: 25px !important;
   color: white; }
-
-.fa:hover {
-  color: #cc5500 !important; }
 
 .links {
   width: auto;
